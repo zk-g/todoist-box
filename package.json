@@ -1,6 +1,6 @@
 {
   "name": "todoist-box",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "📊 Update a gist to contain your Todoist stats",
   "author": "Yohix <me@yohix.dev>",
   "license": "MIT",
