@@ -54,7 +54,7 @@ async function updateGist(data) {
   lines.push(totalTasks.join(" "));
 
   const longestStreak = [
-    `⌛ Your longest streak is ${humanize(goals.last_daily_streak.count)} days`
+    `⌛ Longest streak is ${humanize(goals.last_daily_streak.count)} days`
   ];
   lines.push(longestStreak.join(" "));
 
