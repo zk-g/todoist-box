@@ -1,0 +1,27 @@
+{
+  "name": "todoist-box",
+  "version": "0.0.1",
+  "description": "📊 Update a gist to contain your Todoist stats",
+  "author": "Yohix <me@yohix.dev>",
+  "license": "MIT",
+  "scripts": {
+    "build": "ncc build index.js --out dist --minify"
+  },
+  "dependencies": {
+    "@octokit/rest": "16.36.0",
+    "axios": "^0.19.0",
+    "dotenv": "8.2.0",
+    "humanize-number": "0.0.2"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "0.20.5",
+    "husky": "3.1.0",
+    "prettier": "1.19.1",
+    "pretty-quick": "2.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}

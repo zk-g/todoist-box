@@ -1,0 +1,8 @@
+name: "todoist-box"
+description: "Update a pinned gist to contain Todoist stats"
+branding:
+  icon: "clipboard"
+  color: "blue"
+runs:
+  using: "node12"
+  main: "dist/index.js"
