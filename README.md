@@ -19,32 +19,12 @@
 
 ### Project setup
 
-1. Create a Repo in GitHub (https://github.com/new)
-1. Go to https://github.com/yohix/todoist-box/actions/new
-1. Click Set up a workflow yourself
-1. Overwrite the file with below content
-
-```yml
-name: Schedule
-on:
-  schedule:
-    - cron: "0 * * * *"
-  push:
-    branches: master
-jobs:
-  update-gist:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@master
-      - name: Update gist
-        uses: yohix/todoist-box@master
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GIST_ID: ${{ secrets.GIST_ID }}
-          TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
-```
-5. Go to Secrets (https://github.com/username/reponame/settings/secrets)
-6. Add `GH_TOKEN`, `GIST_ID` and `TODOIST_API_KEY` generated in above steps
+1. Fork this repo
+1. Go to the repo **Settings > Secrets**
+1. Add the following environment variables:
+   - **GH_TOKEN:** The GitHub token generated above.
+   - **GIST_ID:** The ID portion from your gist url: `https://gist.github.com/yohix/`**`a582ad10a45dc17815feea6018223880`**.
+   - **TODOIST_API_KEY:** The API token for your Todoist account.
 
 ## License
 
