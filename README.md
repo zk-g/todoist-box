@@ -23,9 +23,9 @@
 1. Go to the repo **Settings > Secrets**
 1. Add the following environment variables:
    - **GH_TOKEN:** The GitHub token generated above.
-   - **GIST_ID:** The ID portion from your gist url: `https://gist.github.com/yohix/`**`a582ad10a45dc17815feea6018223880`**.
+   - **GIST_ID:** The ID portion from your gist url: `https://gist.github.com/yg/`**`a582ad10a45dc17815feea6018223880`**.
    - **TODOIST_API_KEY:** The API token for your Todoist account.
 
 ## License
 
-MIT © [Yohix](LICENSE)
+MIT © [Yogi](LICENSE)
