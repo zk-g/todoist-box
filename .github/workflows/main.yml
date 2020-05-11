@@ -1,0 +1,17 @@
+name: todoist-box
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "0 0 * * *"
+jobs:
+  update-gist:
+    runs-on: ubuntu-latest
+    steps:
+      - name: todoist-box
+        uses: zk-g/todoist-box@v1.0.1
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GIST_ID: ${{ secrets.GIST_ID }}
+          TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
